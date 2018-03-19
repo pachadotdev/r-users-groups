@@ -1,0 +1,30 @@
+\ProvidesPackage{beamercolorthemepacha}[2013/03/07]
+
+% Beamer theme by Pacha <pacha.chile[at]gmail.com>
+% march 2013 version 1
+%
+% based on the LaTeX-Beamer package, Singapore theme and Progressbar theme:
+%
+% This program can be redistributed and/or modified under the terms
+% of the GNU Public License, version 2.
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Some color definitions...
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usecolortheme{sidebartab}
+
+\definecolor{progressbar@bgblue}{rgb}{0.75,0.75,0.95} % use structure theme to change
+\definecolor{progressbar@fgblue}{rgb}{0.1,0.1,0.9} % use structure theme to change
+
+\setbeamercolor*{palette primary}{fg=progressbar@fgblue,bg=progressbar@bgblue}
+\setbeamercolor*{palette secundary}{fg=progressbar@fgblue,bg=progressbar@bgblue}
+\setbeamercolor*{palette tertiary}{fg=progressbar@fgblue,bg=progressbar@bgblue}
+
+\setbeamercolor{section in head/foot}{parent=palette primary}
+
+\makeatother

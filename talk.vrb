@@ -1,0 +1,19 @@
+\frametitle{Country Space}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{set.seed}\NormalTok{(}\DecValTok{1717}\NormalTok{)}
+
+\NormalTok{Phi_cc_long }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{filter}\NormalTok{(value }\OperatorTok{>=}\StringTok{ }\FloatTok{0.4}\NormalTok{) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{graph_from_data_frame}\NormalTok{() }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{ggraph}\NormalTok{(}\DataTypeTok{layout =} \StringTok{"fr"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_edge_link}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{edge_alpha =}\NormalTok{ value, }\DataTypeTok{edge_width =}\NormalTok{ value), }
+                 \DataTypeTok{edge_colour =} \StringTok{"#a8a8a8"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_node_point}\NormalTok{(}\DataTypeTok{color =} \StringTok{"darkslategray4"}\NormalTok{, }\DataTypeTok{size =} \DecValTok{8}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_node_text}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{label =}\NormalTok{ name), }\DataTypeTok{vjust =} \FloatTok{2.2}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{ggtitle}\NormalTok{(}\StringTok{"Sketch of Fantasy World's Product Space"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{theme_void}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
