@@ -1,0 +1,322 @@
+---
+title: "Estimación de Demanda Usando R"
+author: "Pachá"
+date: "2019-09-27"
+output: 
+  beamer_presentation:
+    theme: "Madrid"
+    colortheme: "dolphin"
+    fonttheme: "structurebold"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Importar datos
+
+Archivo bev.csv
+
+* Datos: Estimación Producción de cerveza en EEUU
+* Inicio de la serie: 19 de enero de 2014
+* Frecuencia: Semanal
+* Cantidad de observaciones: 176
+* ¿Cómo lo llevo a un formato adecuado?
+
+## Importar datos
+
+```{r, echo=TRUE, message=FALSE}
+library(readr)
+library(xts)
+
+bev <- read_csv("bev.csv")
+dates <- seq(as.Date("2014-01-19"),
+length = 176, by = "weeks")
+bev_xts <- xts(bev, order.by = dates)
+```
+
+## Visualizar datos
+
+* En los datos MET se refiere a área metropolitana
+* High, end y sp (especialidad) se refieren a las líneas de producto
+* ¿Qué ocurre con las ventas en el área metropolitana?
+
+## Visualizar datos
+
+```{r, eval=FALSE, echo=TRUE, warning=FALSE}
+MET_hi <- bev_xts[,"MET.hi"]
+MET_lo <- bev_xts[,"MET.lo"]
+MET_sp <- bev_xts[,"MET.sp"]
+MET_t <- MET_hi + MET_lo + MET_sp
+plot(MET_t)
+```
+
+## Visualizar datos
+
+```{r, eval=TRUE, echo=FALSE}
+MET_hi <- bev_xts[,"MET.hi"]
+MET_lo <- bev_xts[,"MET.lo"]
+MET_sp <- bev_xts[,"MET.sp"]
+MET_t <- MET_hi + MET_lo + MET_sp
+plot(MET_t)
+```
+
+## `auto.arima()`
+
+* Proporciona un modelo de partida
+* Sobre los datos puedo definir un conjunto de validación (e.g. 2017)
+
+## `auto.arima()`
+
+```{r, eval=TRUE, echo=TRUE}
+library(forecast)
+
+MET_hi <- bev_xts[,"MET.hi"]
+MET_lo <- bev_xts[,"MET.lo"]
+MET_sp <- bev_xts[,"MET.sp"]
+MET_t <- MET_hi + MET_lo + MET_sp
+MET_t <- xts(MET_t$MET.hi, order.by = dates)
+MET_t_train <- MET_t[index(MET_t) < "2017-01-01"]
+MET_t_valid <- MET_t[index(MET_t) >= "2017-01-01"]
+```
+
+## `auto.arima()`
+
+```{r, eval=TRUE}
+auto.arima(MET_t_train)
+```
+
+## Interpretación de `auto.arima()`
+
+* El modelo entrega información respecto del comportamiento de los
+datos
+* En este caso nos dice que un proceso AR 1 describe mejor la serie
+
+## Interpretación de `auto.arima()`
+
+```{r, echo=TRUE}
+MET_t_model <- auto.arima(MET_t_train)
+MET_t_model
+```
+
+## `forecast()`
+
+* Con lo anterior puedo hacer una proyección
+* Con los datos de entrenamiento puedo hacer una estimación a cinco
+meses (20 semanas) y contrastar
+
+## `forecast()`
+
+```{r, eval=FALSE, echo=TRUE}
+forecast_MET_t <- forecast(MET_t_model, h = 22)
+plot(forecast_MET_t)
+```
+
+## `forecast()`
+
+```{r, eval=TRUE}
+forecast_MET_t <- forecast(MET_t_model, h = 22)
+plot(forecast_MET_t)
+```
+
+## MAPE y MAE
+
+Error absoluto con respecto a la media (MAE)
+
+$$
+\frac{1}{T} \sum_{i=1}^n |Y_t - \bar{Y}_t|
+$$
+
+Porcentaje de error absoluto con respecto a la media (MAPE)
+
+$$
+\frac{100}{T} \sum_{i=1}^n \left| \frac{Yt - \bar{Y}_t}{Y_t} \right|
+$$
+
+## MAPE y MAE
+
+```{r, echo=TRUE}
+for_MET_t <- as.numeric(forecast_MET_t$mean)
+v_MET_t <- as.numeric(MET_t_valid)
+
+MAE <- mean(abs(for_MET_t - v_MET_t))
+MAPE <- 100*mean(abs((for_MET_t - v_MET_t) /v_MET_t))
+```
+
+## MAPE y MAE
+
+```{r, echo=TRUE}
+print(MAE)
+print(MAPE)
+```
+
+* La predicción falla en torno a un 20%
+* ¿Qué tanto difiere de los datos de validación?
+
+## Visualización de datos (nuevamente)
+
+```{r, eval=FALSE, echo=TRUE}
+for_dates <- seq(as.Date("2017-01-01"), length = 22,
+by = "weeks")
+
+for_MET_t_xts <- xts(forecast_MET_t$mean,
+order.by = for_dates)
+
+plot(MET_t_valid, main = 'Prediccion vs Validacion',
+ylim = c(4000, 8500))
+
+lines(for_MET_t_xts, col = "blue")
+```
+
+## Visualización de datos (nuevamente)
+
+```{r, eval=TRUE, echo=FALSE}
+for_dates <- seq(as.Date("2017-01-01"), length = 22,
+by = "weeks")
+for_MET_t_xts <- xts(forecast_MET_t$mean,
+order.by = for_dates)
+plot(MET_t_valid, main = 'Prediccion vs Validacion',
+ylim = c(4000, 8500))
+lines(for_MET_t_xts, col = "blue")
+```
+
+## Visualización de datos (nuevamente)
+
+```{r, eval=TRUE, echo=FALSE}
+lines(for_MET_t_xts, col = "blue")
+```
+
+## Intervalo de confianza
+
+* La estimación automáticamente proporciona los intervalos de confianza
+al 80% y 95%
+* Se pueden extraer estos elementos de igual modo que seleccionando
+columnas
+
+## Intervalo de confianza
+
+```{r, eval=FALSE, echo=TRUE}
+plot(MET_t_valid, main = 'Prediccion vs Validacion',
+ylim = c(4000, 8500))
+lines(for_MET_t_xts, col = "blue")
+
+lower <- xts(forecast_MET_t$lower[,"95%"],
+order.by = for_dates)
+
+upper <- xts(forecast_MET_t$upper[,"95%"],
+order.by = for_dates)
+
+lines(lower, col = "blue", lty = "dashed")
+lines(upper, col = "blue", lty = "dashed")
+```
+
+## Intervalo de confianza
+
+```{r, eval=TRUE, echo=FALSE}
+plot(MET_t_valid, main = 'Prediccion vs Validacion',
+ylim = c(4000, 8500))
+lines(for_MET_t_xts, col = "blue")
+```
+
+## Intervalo de confianza
+
+```{r, eval=TRUE, echo=FALSE}
+lines(for_MET_t_xts, col = "blue")
+```
+
+## Intervalo de confianza
+
+```{r, eval=TRUE, echo=FALSE}
+lower <- xts(forecast_MET_t$lower[,"95%"],
+order.by = for_dates)
+
+upper <- xts(forecast_MET_t$upper[,"95%"],
+order.by = for_dates)
+
+lines(lower, col = "blue", lty = "dashed")
+```
+
+## Intervalo de confianza
+
+```{r, eval=TRUE, echo=FALSE}
+lines(upper, col = "blue", lty = "dashed")
+```
+
+## Elasticidad de la demanda
+
+* Tomando las variables (unidimensionales) precio y cantidad
+demandada, supongamos que la cantidad se puede escribir en función
+del precio $q = f (p)$.
+* La elasticidad de q respecto de p corresponde a
+
+$$
+e_{p,q} = \frac{\partial q}{\partial p} \cdot \frac{p}{q}
+$$
+
+## Elasticidad de la demanda
+
+Lo anterior es extraño, pero si p aumenta en un 1% la variación porcentual en $q(p)$ es
+
+$$
+\frac{q(1,01p) - q(p)}{q(p)}\cdot 100
+$$
+
+Si $f$ es diferenciable se puede aplicar el polinomio de Taylor de grado uno y tomar $p_0 \approx 0$ para obtener
+
+$$
+\frac{q(1,01p) - q(p)}{q(p)}\cdot 100 \approx 0,01p \frac{\partial q(p)/\partial p}{q(p)} \times 100
+$$
+
+## Elasticidad de la demanda
+
+Para efectos de la calculabilidad de la elasticidad se puede definir
+$g(p) = \ln(q(p))$ y entonces
+
+$$
+e_{q,p} = \frac{\Delta \ln(q)}{\Delta \ln(p)}
+$$
+
+## Elasticidad de la demanda
+
+* El último resultado es extremadamente útil si uso un software como R
+* En el caso de un modelo log-log, los coeficientes de regresión
+corresponden a la elasticidad
+* Si estimo los betas del modelo $\ln(q_i ) = \beta_0 + \beta_1 \ln(p_i) + \varepsilon_i$, $\beta_1$ es exactamente la elasticidad precio de la demanda
+* ¿Qué se puede decir respecto de la elasticidad precio de la gama alta
+en la zona metropolitana?
+
+## Elasticidad de la demanda
+
+```{r, eval=FALSE, echo=TRUE}
+bev_xts_train <- bev_xts[index(bev_xts) < "2017-01-01"]
+bev_xts_valid <- bev_xts[index(bev_xts) >= "2017-01-01"]
+
+l_MET_hi_p <- as.vector(log(bev_xts_train[,"MET.hi.p"]))
+MET_hi_train <- MET_hi[1:length(l_MET_hi_p)]
+MET_hi_train <- data.frame(as.vector(log(MET_hi_train)), 
+                           l_MET_hi_p)
+colnames(MET_hi_train) <- c("log_sales", "log_price")
+
+model_MET_hi <- lm(log_sales ~ log_price, 
+                   data = MET_hi_train)
+
+model_MET_hi
+```
+
+## Elasticidad de la demanda
+
+```{r}
+bev_xts_train <- bev_xts[index(bev_xts) < "2017-01-01"]
+bev_xts_valid <- bev_xts[index(bev_xts) >= "2017-01-01"]
+
+l_MET_hi_p <- as.vector(log(bev_xts_train[,"MET.hi.p"]))
+MET_hi_train <- MET_hi[1:length(l_MET_hi_p)]
+MET_hi_train <- data.frame(as.vector(log(MET_hi_train)), 
+                           l_MET_hi_p)
+colnames(MET_hi_train) <- c("log_sales", "log_price")
+
+model_MET_hi <- lm(log_sales ~ log_price, 
+                   data = MET_hi_train)
+
+model_MET_hi
+```
