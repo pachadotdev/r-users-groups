@@ -1,0 +1,91 @@
+/* customising title background needs to be via remark-slide due to how default title slides are defined*/
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+
+@font-face{
+    font-family: 'Fira Code';
+    src: url('../assets/fonts/eot/FiraCode-Light.eot');
+    src: url('../assets/fonts/eot/FiraCode-Light.eot') format('embedded-opentype'),
+         url('../assets/fonts/woff2/FiraCode-Light.woff2') format('woff2'),
+         url('../assets/fonts/woff/FiraCode-Light.woff') format('woff'),
+         url('../assets/fonts/ttf/FiraCode-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Fira Code';
+    src: url('../assets/fonts/eot/FiraCode-Regular.eot');
+    src: url('../assets/fonts/eot/FiraCode-Regular.eot') format('embedded-opentype'),
+         url('../assets/fonts/woff2/FiraCode-Regular.woff2') format('woff2'),
+         url('../assets/fonts/woff/FiraCode-Regular.woff') format('woff'),
+         url('../assets/fonts/ttf/FiraCode-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Fira Code';
+    src: url('../assets/fonts/eot/FiraCode-Medium.eot');
+    src: url('../assets/fonts/eot/FiraCode-Medium.eot') format('embedded-opentype'),
+         url('../assets/fonts/woff2/FiraCode-Medium.woff2') format('woff2'),
+         url('../assets/fonts/woff/FiraCode-Medium.woff') format('woff'),
+         url('../assets/fonts/ttf/FiraCode-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Fira Code';
+    src: url('../assets/fonts/eot/FiraCode-Bold.eot');
+    src: url('../assets/fonts/eot/FiraCode-Bold.eot') format('embedded-opentype'),
+         url('../assets/fonts/woff2/FiraCode-Bold.woff2') format('woff2'),
+         url('../assets/fonts/woff/FiraCode-Bold.woff') format('woff'),
+         url('../assets/fonts/ttf/FiraCode-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body { font-family: "Fira Sans", sans-serif; }
+
+.remark-slide {
+  background-image: url("../images/plumber.png");
+  background-size:  contain;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-color: #333;
+}
+
+.bg-main6 { background-color: white; color: black}
+.bg-main6 .remark-code, .remark-inline-code { font-family: "Fira Code", monospace; color: #333333; font-variant-ligatures: inherit; }
+
+a { 
+  color: navy;
+}
+
+.width70 {
+  width: 70%;
+}
+
+.borderit {
+  border-style: solid;
+  border-width: 4px;
+  border-color: black;
+}
+
+.p-canvas-webgl {
+  position: fixed;
+  z-index: 1;
+  top: 0; left: 0;
+}
+
+.remark-code-line {
+  font-size: 80%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Fira Sans", sans-serif;
+}
+
+.title-slide {
+  background-color: rgb(51,51,51,0.3);
+}
