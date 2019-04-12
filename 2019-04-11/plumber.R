@@ -1,3 +1,4 @@
+if (!require("pacman")) { install.packages("pacman") }
 pacman::p_load_gh("pachamaltese/datos")
 pacman::p_load(plumber)
 
