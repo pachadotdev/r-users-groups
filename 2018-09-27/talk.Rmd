@@ -68,7 +68,7 @@ plot(MET_t)
 
 ## `auto.arima()`
 
-```{r, eval=TRUE, echo=TRUE}
+```{r, eval=TRUE, echo=TRUE, message=FALSE}
 library(forecast)
 
 MET_hi <- bev_xts[,"MET.hi"]
@@ -255,16 +255,16 @@ $$
 
 ## Elasticidad de la demanda
 
-Lo anterior es extraño, pero si p aumenta en un 1% la variación porcentual en $q(p)$ es
+Si p aumenta en un 1% la variación porcentual en $q(p)$ es
 
 $$
 \frac{q(1,01p) - q(p)}{q(p)}\cdot 100
 $$
 
-Si $f$ es diferenciable se puede aplicar el polinomio de Taylor de grado uno y tomar $p_0 \approx 0$ para obtener
+Si $f$ es diferenciable se puede aplicar el polinomio de Taylor de grado uno para obtener
 
 $$
-\frac{q(1,01p) - q(p)}{q(p)}\cdot 100 \approx 0,01p \frac{\partial q(p)/\partial p}{q(p)} \times 100
+\frac{q(1,01p) - q(p)}{q(p)}\cdot 100 \approx 0,01p \frac{\partial q(p)/\partial p}{q(p)} \cdot 100
 $$
 
 ## Elasticidad de la demanda
@@ -273,7 +273,7 @@ Para efectos de la calculabilidad de la elasticidad se puede definir
 $g(p) = \ln(q(p))$ y entonces
 
 $$
-e_{q,p} = \frac{\Delta \ln(q)}{\Delta \ln(p)}
+e_{p,q} = \frac{\Delta \ln(q)}{\Delta \ln(p)}
 $$
 
 ## Elasticidad de la demanda
