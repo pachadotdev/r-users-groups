@@ -139,4 +139,15 @@ function(x, y, m) {
 
 **Email: `pacha arroba dcc punto uchile punto cl`**
 
-**Para Empresas: `contacto arroba simply statistics punto cl`**
+---
+
+<center>
+<h3>
+This work is licensed as
+
+**Creative Commons Attribution-NonCommercial 4.0 International**
+
+To view a copy of this license visit
+https://creativecommons.org/licenses/by-nc/4.0/
+</h3>
+<center>

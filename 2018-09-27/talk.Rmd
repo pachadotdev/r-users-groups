@@ -320,3 +320,12 @@ model_MET_hi <- lm(log_sales ~ log_price,
 
 model_MET_hi
 ```
+
+---
+
+This work is licensed as
+
+**Creative Commons Attribution-NonCommercial 4.0 International**
+
+To view a copy of this license visit
+https://creativecommons.org/licenses/by-nc/4.0/
