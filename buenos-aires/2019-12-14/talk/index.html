@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>index.utf8.md</title>
+    <meta charset="utf-8" />
+    <link href="libs/font-awesome/css/fontawesome-all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/metropolis.min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/metropolis-fonts.min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/fontawesome-all.min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/part-slide.min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/my-theme.min.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+class: center, middle, inverse, title-slide
+
+# Open Trade Statistics
+## Pachá&lt;br/&gt; <i class="fab  fa-twitter "></i> pachamaltese, <i class="fab  fa-github "></i> pachamaltese
+### 2019-10-19
+
+---
+
+# Contents of the talk
+
+* Introduction
+
+* API
+
+* R Package
+
+* Dplyr + SQL
+
+* Creating your own API
+
+* Shiny apps
+
+---
+
+# Where to reach me
+
+**Twitter and Github: `pachamaltese`**
+
+**Email: `pacha # dcc * uchile * cl`**
+
+---
+
+# Introduction
+
+* [Open Trade Statistics](https://tradestatistics.io) (OTS) was created with the intention to lower the barrier to working with international economic trade data.
+
+* It includes a public API, a dashboard, and an R package for data retrieval.
+
+---
+
+# Introduction
+
+* Many Latin American Universities have limited or no access to the [United Nations Commodity Trade Statistics Database](https://comtrade.un.org/) (UN COMTRADE).
+
+* This project shares curated datasets based on UN COMTRADE.
+
+---
+
+# Introduction
+
+The project has a major reproducibility flaw.
+
+&lt;img src="images/cat.png" alt="cat" width="100%"/&gt;
+
+---
+
+# Introduction
+
+Hardware and software stack
+
+&lt;img src="images/stack.svg" alt="stack" height="100%" width="100%"/&gt;
+
+---
+
+# Introduction
+
+The next three slides are an *oversimplification* just to explain the work in
+wide terms.
+
+---
+
+# Introduction
+
+The raw data contains missing flows:
+
+&lt;img src="images/flows1.svg" alt="stack" width="100%"/&gt;
+
+---
+
+# Introduction
+
+Possible solution (Anderson &amp; van Wincoop, 2004 propose 8% rate):
+
+&lt;img src="images/flows2.svg" alt="stack" width="100%"/&gt;
+
+---
+
+# Introduction
+
+Customs have changed their coding systems in order to reflect changes
+in exported products (i.e. in 1960 nobody exported laptops).
+
+&lt;img src="images/productcodes.svg" alt="stack" width="100%"/&gt;
+
+---
+
+# Introduction
+
+* We have 2018 data, similar initiatives have datasets updated to 2016 or 2017.
+
+* But *much* more important than that, we converted all years to HS rev 2007 to
+allow time comparisons.
+
+---
+
+# R package
+
+```r
+# easy start
+install.packages("tradestatistics")
+```
+---
+
+# R package
+
+Fiji exports a lot of water. But how much of its exports to the US are actually water?
+
+
+```r
+library(dplyr)
+library(tradestatistics)
+
+fji_usa &lt;- ots_create_tidy_data(
+  years = 2017, reporters = "fji", partners = "usa",
+  include_shortnames = T
+)
+
+fji_usa_2 &lt;- fji_usa %&gt;% 
+  select(product_shortname_english, export_value_usd) %&gt;% 
+  arrange(-export_value_usd) %&gt;% 
+  mutate(export_value_share = round(100 * export_value_usd /
+                                      sum(export_value_usd, na.rm = T), 2))
+```
+
+---
+
+# R package
+
+
+```r
+fji_usa_2
+```
+
+```
+## # A tibble: 736 x 3
+##    product_shortname_english export_value_usd export_value_share
+##    &lt;chr&gt;                                &lt;int&gt;              &lt;dbl&gt;
+##  1 Water                            233431002              60   
+##  2 Processed Fish                    61666883              15.8 
+##  3 Non-fillet Fresh Fish             18503975               4.76
+##  4 Raw Sugar                         12600118               3.24
+##  5 Broadcasting Equipment            10967992               2.82
+##  6 Perfume Plants                     7273321               1.87
+##  7 Fish Fillets                       5540948               1.42
+##  8 Unspecified                        4246687               1.09
+##  9 Non-fillet Frozen Fish             4033516               1.04
+## 10 Molasses                           3578212               0.92
+## # … with 726 more rows
+```
+
+---
+
+# R package
+
+Which country from America is the #1 partner with the European Union (EU-28)?
+
+
+```r
+eu28 &lt;- ots_countries %&gt;% 
+  filter(eu28_member == 1) %&gt;% 
+  select(country_iso)
+
+ame_eu28 &lt;- ots_create_tidy_data(
+  years = 2017, reporters = "c-am", partners = "all",
+  table = "yrp"
+)
+```
+
+---
+
+
+```r
+ame_eu28_2 &lt;- ame_eu28 %&gt;% 
+  mutate(is_eu28 = ifelse(partner_iso %in% eu28$country_iso, 1, 0)) %&gt;% 
+  
+  group_by(reporter_iso, is_eu28) %&gt;% 
+  summarise(export_value_usd = sum(export_value_usd, na.rm = T)) %&gt;% 
+  
+  group_by(reporter_iso) %&gt;%
+  mutate(pct_to_eu28 = export_value_usd / sum(export_value_usd, na.rm = T)) %&gt;% 
+  
+  filter(is_eu28 == 1) %&gt;% 
+  select(reporter_iso, export_value_usd, pct_to_eu28) %&gt;% 
+  arrange(-export_value_usd)
+```
+
+---
+
+
+```r
+ame_eu28_2
+```
+
+```
+## # A tibble: 48 x 3
+## # Groups:   reporter_iso [48]
+##    reporter_iso export_value_usd pct_to_eu28
+##    &lt;chr&gt;                   &lt;dbl&gt;       &lt;dbl&gt;
+##  1 usa              406704170165      0.218 
+##  2 can               51259679792      0.109 
+##  3 bra               45042481104      0.174 
+##  4 mex               34405957170      0.0711
+##  5 chl               10937519973      0.144 
+##  6 arg               10872575385      0.165 
+##  7 per                8375757038      0.170 
+##  8 col                8124020268      0.168 
+##  9 cri                3922634462      0.246 
+## 10 ecu                3917486407      0.169 
+## # … with 38 more rows
+```
+
+---
+
+# Code and documentation
+
+**github.com/tradestatistics**
+
+**docs.ropensci.org/tradestatistics**
+
+**tradestatistics.io**
+
+---
+
+# Dplyr + SQL
+
+Your turn
+
+---
+
+# Creating your own API
+
+Your turn
+
+---
+
+# Shiny apps
+
+Your turn
+
+---
+
+# Acknowledgements
+
+* rOpenSci &lt;3: Amanda, Emily, Jorge, Maelle, Mark and Stefanie
+* DigitalOcean: Danny
+* Highcharter/Design: Joshua and Erasmo
+
+---
+
+&lt;center&gt;
+&lt;h3&gt;
+This work is licensed as
+
+**Creative Commons Attribution-NonCommercial 4.0 International**
+
+To view a copy of this license visit
+https://creativecommons.org/licenses/by-nc/4.0/
+&lt;/h3&gt;
+&lt;center&gt;
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"ratio": "4:3",
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="97.168831mm"
+   height="39.748989mm"
+   viewBox="0 0 97.168828 39.748989"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="productcodes.svg">
+  <defs
+     id="defs2">
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3081"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3079"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker1498"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mstart">
+      <path
+         transform="scale(0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path1496"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path1083"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mstart"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path1080"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(0.4,0,0,0.4,4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <inkscape:perspective
+       id="perspective4714"
+       inkscape:persp3d-origin="272.3118 : 84.672267 : 1"
+       inkscape:vp_z="544.62361 : 127.0084 : 1"
+       inkscape:vp_y="0 : 999.99975 : 0"
+       inkscape:vp_x="0 : 127.0084 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 127.0084 : 1"
+       inkscape:vp_y="0 : 999.99975 : 0"
+       inkscape:vp_z="544.62361 : 127.0084 : 1"
+       inkscape:persp3d-origin="272.3118 : 84.672267 : 1"
+       id="perspective4714-3" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 127.0084 : 1"
+       inkscape:vp_y="0 : 999.99976 : 0"
+       inkscape:vp_z="544.62363 : 127.0084 : 1"
+       inkscape:persp3d-origin="272.31181 : 84.672268 : 1"
+       id="perspective4714-7" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.959798"
+     inkscape:cx="221.50925"
+     inkscape:cy="106.67573"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g966"
+     showgrid="false"
+     inkscape:window-width="1600"
+     inkscape:window-height="832"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     fit-margin-top="5"
+     fit-margin-left="5"
+     fit-margin-bottom="5"
+     fit-margin-right="5"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:lockguides="true">
+    <sodipodi:guide
+       position="6.0476187,15.875"
+       orientation="0,1"
+       id="guide198"
+       inkscape:locked="true" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(65.721216,-165.01493)">
+    <g
+       id="g3967"
+       transform="matrix(0.28222222,0,0,0.28222222,-32.645493,127.94206)">
+      <g
+         transform="translate(-316.88028,-243.57915)"
+         id="layer1-2"
+         inkscape:label="Layer 1" />
+      <g
+         transform="translate(-259.13017,-124.82991)"
+         id="g4643">
+        <g
+           transform="rotate(45,345.35979,192.23726)"
+           id="g5111">
+          <g
+             id="g5079"
+             transform="rotate(-45,133.71331,77.409898)">
+            <g
+               id="g4877">
+              <g
+                 id="g4951" />
+            </g>
+          </g>
+          <g
+             id="g4317">
+            <g
+               transform="rotate(-45,345.35978,204.21215)"
+               id="g3425">
+              <g
+                 id="g966"
+                 transform="rotate(44.989649,249.65847,316.77013)">
+                <g
+                   aria-label="1962"
+                   transform="rotate(-45)"
+                   style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                   id="text990">
+                  <path
+                     d="m -113.85708,457.93041 h -1.0125 l -2.5875,1.6 0.5,0.8125 1.95,-1.1875 v 7.1375 h 1.15 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path58" />
+                  <path
+                     d="m -109.23716,457.80541 c -1.45,0 -2.675,1.0125 -2.675,2.7625 0,1.6625 1.0125,2.6875 2.3125,2.6875 0.85,0 1.5125,-0.4375 1.875,-1 -0.0875,1.8875 -1.425,2.85 -3.525,3.45 l 0.2625,0.8625 c 3.075,-0.8875 4.45,-2.05 4.45,-5.5125 0,-1.9625 -0.9,-3.25 -2.7,-3.25 z m -0.125,4.55 c -0.8125,0 -1.3875,-0.5625 -1.3875,-1.7625 0,-1.2 0.5625,-1.875 1.5375,-1.875 1.0375,0 1.55,0.7125 1.5125,2.6 -0.4125,0.6375 -0.95,1.0375 -1.6625,1.0375 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path60" />
+                  <path
+                     d="m -102.05727,460.79291 c -0.7875,0 -1.4625,0.325 -2.0125,1.1 0.0625,-1.9125 0.7875,-3.175 2,-3.175 0.4625,0 0.9,0.125 1.2875,0.3625 l 0.45,-0.7625 c -0.4875,-0.325 -1.05,-0.5125 -1.725,-0.5125 -1.975,0 -3.1625,1.825 -3.1625,4.5625 0,2.4 0.775,4.075 2.8125,4.075 1.475,0 2.662498,-1.1625 2.662498,-2.9875 0,-1.7875 -1.087498,-2.6625 -2.312498,-2.6625 z m -0.35,4.7375 c -1.1125,0 -1.6,-0.85 -1.65,-2.675 0.425,-0.6875 1.05,-1.15 1.8,-1.15 0.7875,0 1.35,0.4625 1.35,1.7875 0,1.225 -0.5125,2.0375 -1.5,2.0375 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path62" />
+                  <path
+                     d="m -96.538718,457.80541 c -1.05,0 -1.8625,0.425 -2.5375,1.2625 l 0.75,0.6 c 0.5625,-0.6375 1.025,-0.9125 1.725,-0.9125 0.8125,0 1.375,0.5125 1.375,1.3875 0,1.3625 -0.725,2.1625 -3.675,5.2375 v 0.9125 h 4.9375 l 0.1375,-0.9625 h -3.7625 c 2.5625,-2.5625 3.5625,-3.675 3.5625,-5.2375 0,-1.3 -0.975,-2.2875 -2.5125,-2.2875 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path64" />
+                </g>
+                <path
+                   transform="rotate(-44.989649)"
+                   style="fill:#8d91d0;fill-opacity:1;stroke:none;stroke-width:1.32131338;stroke-miterlimit:4;stroke-dasharray:none"
+                   d="M -103.88665,434.60147 H 159.90513 V 449.2861 H -103.88665 Z"
+                   id="rect1077" />
+                <path
+                   style="fill:none;stroke:#000000;stroke-width:0.93897641;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker1498);marker-end:url(#marker3081)"
+                   d="M 227.46001,407.89389 443.89271,191.53937"
+                   id="path200"
+                   inkscape:connector-curvature="0" />
+                <g
+                   aria-label="2018"
+                   transform="rotate(-45)"
+                   style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                   id="text1075">
+                  <path
+                     d="m 145.4465,457.85247 c -1.05,0 -1.8625,0.425 -2.5375,1.2625 l 0.75,0.6 c 0.5625,-0.6375 1.025,-0.9125 1.725,-0.9125 0.8125,0 1.375,0.5125 1.375,1.3875 0,1.3625 -0.725,2.1625 -3.675,5.2375 v 0.9125 h 4.9375 l 0.1375,-0.9625 h -3.7625 c 2.5625,-2.5625 3.5625,-3.675 3.5625,-5.2375 0,-1.3 -0.975,-2.2875 -2.5125,-2.2875 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path68" />
+                  <path
+                     d="m 152.26075,457.85247 c -1.875,0 -2.8,1.5375 -2.8,4.3125 0,2.775 0.925,4.325 2.8,4.325 1.875,0 2.8,-1.55 2.8,-4.325 0,-2.7625 -0.925,-4.3125 -2.8,-4.3125 z m 0,0.9125 c 1.0375,0 1.6,0.95 1.6,3.4 0,2.4625 -0.5625,3.4125 -1.6,3.4125 -1.05,0 -1.6,-0.95 -1.6,-3.4125 0,-2.45 0.55,-3.4 1.6,-3.4 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path70" />
+                  <path
+                     d="m 159.47579,457.97747 h -1.0125 l -2.5875,1.6 0.5,0.8125 1.95,-1.1875 v 7.1375 h 1.15 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path72" />
+                  <path
+                     d="m 165.42072,461.85247 c 0.95,-0.475 1.425,-1.0375 1.425,-1.8875 0,-1.425 -1.2875,-2.1125 -2.5375,-2.1125 -1.275,0 -2.5375,0.7375 -2.5375,2.15 0,0.8625 0.4,1.5 1.3,1.95 -1.025,0.45 -1.65,1.1 -1.65,2.175 0,1.375 1.1375,2.3625 2.8625,2.3625 1.7,0 2.9,-0.9875 2.9,-2.3875 0,-1.05 -0.6125,-1.7875 -1.7625,-2.25 z m -1.1125,-3.1375 c 0.9125,0 1.4125,0.5125 1.4125,1.2875 0,0.7125 -0.3125,1.15 -1.0625,1.575 l -0.2125,-0.075 c -0.9625,-0.3125 -1.55,-0.625 -1.55,-1.4875 0,-0.8375 0.55,-1.3 1.4125,-1.3 z m -0.0125,6.8625 c -1.0375,0 -1.675,-0.5375 -1.675,-1.45 0,-0.9125 0.4,-1.4875 1.225,-1.8875 l 0.3125,0.1125 c 1.35,0.4625 1.825,0.8625 1.825,1.7625 0,0.875 -0.6375,1.4625 -1.6875,1.4625 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path74" />
+                </g>
+                <g
+                   aria-label="SITC rev 1"
+                   transform="rotate(-45)"
+                   style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                   id="text1081">
+                  <path
+                     d="m 5.3501147,437.49003 c -1.5875,0 -2.7125,0.925 -2.7125,2.25 0,1.3375 0.875,1.975 2.55,2.4875 1.4625,0.45 1.8625,0.825 1.8625,1.6625 0,1.0375 -0.8375,1.5375 -1.85,1.5375 -0.9375,0 -1.6125,-0.3375 -2.2625,-0.8625 l -0.65,0.725 c 0.7125,0.7 1.6875,1.1125 2.925,1.1125 1.9375,0 3.075,-1.05 3.075,-2.55 0,-1.65 -1.175,-2.1875 -2.55,-2.6125 -1.55,-0.475 -1.8875,-0.825 -1.8875,-1.55 0,-0.825 0.6875,-1.225 1.55,-1.225 0.7125,0 1.3125,0.225 1.9625,0.75 l 0.65,-0.725 c -0.725,-0.65 -1.475,-1 -2.6625,-1 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path77" />
+                  <path
+                     d="m 11.224138,437.64003 h -1.1875 v 8.6125 h 1.1875 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path79" />
+                  <path
+                     d="m 18.810662,437.64003 h -6.15 v 1.0125 h 2.45 v 7.6 h 1.1875 v -7.6 h 2.3875 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path81" />
+                  <path
+                     d="m 22.765935,437.49003 c -1.95,0 -3.575,1.5375 -3.575,4.45 0,2.9 1.5125,4.4625 3.6,4.4625 1.1625,0 1.9875,-0.475 2.4625,-0.9625 l -0.5875,-0.75 c -0.4875,0.3625 -1.025,0.7125 -1.8375,0.7125 -1.3375,0 -2.375,-0.975 -2.375,-3.4625 0,-2.6 1.0875,-3.475 2.3875,-3.475 0.6,0 1.125,0.2 1.6625,0.6375 l 0.65,-0.7625 c -0.6875,-0.55 -1.3,-0.85 -2.3875,-0.85 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path83" />
+                  <path
+                     d="m 32.880583,439.51503 c -0.8,0 -1.4125,0.5 -1.7625,1.4875 l -0.1125,-1.3375 h -0.9875 v 6.5875 h 1.15 v -3.7625 c 0.275,-1.2625 0.75,-1.85 1.575,-1.85 0.2375,0 0.375,0.025 0.575,0.075 l 0.2125,-1.125 c -0.2,-0.05 -0.4375,-0.075 -0.65,-0.075 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path85" />
+                  <path
+                     d="m 39.460857,442.76503 c 0,-2.0125 -0.9375,-3.25 -2.7125,-3.25 -1.7,0 -2.7375,1.4625 -2.7375,3.5125 0,2.0875 1.075,3.375 2.9125,3.375 0.9125,0 1.65,-0.3125 2.3,-0.825 l -0.5,-0.6875 c -0.575,0.4 -1.0625,0.575 -1.7125,0.575 -0.95,0 -1.6625,-0.5875 -1.775,-2.1125 h 4.2 c 0.0125,-0.15 0.025,-0.3625 0.025,-0.5875 z m -1.1375,-0.2625 h -3.0875 c 0.0875,-1.4625 0.6625,-2.075 1.5375,-2.075 1.0375,0 1.55,0.7125 1.55,2 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path87" />
+                  <path
+                     d="m 46.086052,439.66503 h -1.2125 l -1.7125,5.5625 -1.725,-5.5625 h -1.25 l 2.275,6.5875 h 1.3875 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path89" />
+                  <path
+                     d="m 53.571208,437.89003 h -1.0125 l -2.5875,1.6 0.5,0.8125 1.95,-1.1875 v 7.1375 h 1.15 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path91" />
+                </g>
+                <path
+                   transform="rotate(-44.989649)"
+                   style="fill:#8aa678;fill-opacity:1;stroke:none;stroke-width:1.14441359;stroke-miterlimit:4;stroke-dasharray:none"
+                   d="M -37.981133,419.91684 H 159.90511 v 14.68462 H -37.981133 Z"
+                   id="rect1095" />
+                <g
+                   aria-label="SITC rev 2"
+                   transform="rotate(-45)"
+                   style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                   id="text1087">
+                  <path
+                     d="m 37.543018,422.81123 c -1.5875,0 -2.7125,0.925 -2.7125,2.25 0,1.3375 0.875,1.975 2.55,2.4875 1.4625,0.45 1.8625,0.825 1.8625,1.6625 0,1.0375 -0.8375,1.5375 -1.85,1.5375 -0.9375,0 -1.6125,-0.3375 -2.2625,-0.8625 l -0.65,0.725 c 0.7125,0.7 1.6875,1.1125 2.925,1.1125 1.9375,0 3.075,-1.05 3.075,-2.55 0,-1.65 -1.175,-2.1875 -2.55,-2.6125 -1.55,-0.475 -1.8875,-0.825 -1.8875,-1.55 0,-0.825 0.6875,-1.225 1.55,-1.225 0.7125,0 1.3125,0.225 1.9625,0.75 l 0.65,-0.725 c -0.725,-0.65 -1.475,-1 -2.6625,-1 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path95" />
+                  <path
+                     d="m 43.417042,422.96123 h -1.1875 v 8.6125 h 1.1875 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path97" />
+                  <path
+                     d="m 51.003565,422.96123 h -6.15 v 1.0125 h 2.45 v 7.6 h 1.1875 v -7.6 h 2.3875 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path99" />
+                  <path
+                     d="m 54.958839,422.81123 c -1.95,0 -3.575,1.5375 -3.575,4.45 0,2.9 1.5125,4.4625 3.6,4.4625 1.1625,0 1.9875,-0.475 2.4625,-0.9625 l -0.5875,-0.75 c -0.4875,0.3625 -1.025,0.7125 -1.8375,0.7125 -1.3375,0 -2.375,-0.975 -2.375,-3.4625 0,-2.6 1.0875,-3.475 2.3875,-3.475 0.6,0 1.125,0.2 1.6625,0.6375 l 0.65,-0.7625 c -0.6875,-0.55 -1.3,-0.85 -2.3875,-0.85 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path101" />
+                  <path
+                     d="m 65.073487,424.83623 c -0.8,0 -1.4125,0.5 -1.7625,1.4875 l -0.1125,-1.3375 h -0.9875 v 6.5875 h 1.15 v -3.7625 c 0.275,-1.2625 0.75,-1.85 1.575,-1.85 0.2375,0 0.375,0.025 0.575,0.075 l 0.2125,-1.125 c -0.2,-0.05 -0.4375,-0.075 -0.65,-0.075 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path103" />
+                  <path
+                     d="m 71.653761,428.08623 c 0,-2.0125 -0.9375,-3.25 -2.7125,-3.25 -1.7,0 -2.7375,1.4625 -2.7375,3.5125 0,2.0875 1.075,3.375 2.9125,3.375 0.9125,0 1.65,-0.3125 2.3,-0.825 l -0.5,-0.6875 c -0.575,0.4 -1.0625,0.575 -1.7125,0.575 -0.95,0 -1.6625,-0.5875 -1.775,-2.1125 h 4.2 c 0.0125,-0.15 0.025,-0.3625 0.025,-0.5875 z m -1.1375,-0.2625 h -3.0875 c 0.0875,-1.4625 0.6625,-2.075 1.5375,-2.075 1.0375,0 1.55,0.7125 1.55,2 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path105" />
+                  <path
+                     d="m 78.278956,424.98623 h -1.2125 l -1.7125,5.5625 -1.725,-5.5625 h -1.25 l 2.275,6.5875 h 1.3875 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path107" />
+                  <path
+                     d="m 84.576612,423.08623 c -1.05,0 -1.8625,0.425 -2.5375,1.2625 l 0.75,0.6 c 0.5625,-0.6375 1.025,-0.9125 1.725,-0.9125 0.8125,0 1.375,0.5125 1.375,1.3875 0,1.3625 -0.725,2.1625 -3.675,5.2375 v 0.9125 h 4.9375 l 0.1375,-0.9625 h -3.7625 c 2.5625,-2.5625 3.5625,-3.675 3.5625,-5.2375 0,-1.3 -0.975,-2.2875 -2.5125,-2.2875 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path109" />
+                </g>
+                <path
+                   transform="rotate(-44.989649)"
+                   style="fill:#9dde67;fill-opacity:1;stroke:none;stroke-width:0.90032393;stroke-miterlimit:4;stroke-dasharray:none"
+                   d="M 37.430218,405.23221 H 159.90512 v 14.68462 H 37.430218 Z"
+                   id="rect1097" />
+                <g
+                   aria-label="1976"
+                   transform="rotate(-45)"
+                   style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                   id="text1101">
+                  <path
+                     d="m -45.888327,457.94268 h -1.0125 l -2.5875,1.6 0.5,0.8125 1.95,-1.1875 v 7.1375 h 1.15 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path113" />
+                  <path
+                     d="m -41.268405,457.81768 c -1.45,0 -2.675,1.0125 -2.675,2.7625 0,1.6625 1.0125,2.6875 2.3125,2.6875 0.85,0 1.5125,-0.4375 1.875,-1 -0.0875,1.8875 -1.425,2.85 -3.525,3.45 l 0.2625,0.8625 c 3.075,-0.8875 4.45,-2.05 4.45,-5.5125 0,-1.9625 -0.9,-3.25 -2.7,-3.25 z m -0.125,4.55 c -0.8125,0 -1.3875,-0.5625 -1.3875,-1.7625 0,-1.2 0.5625,-1.875 1.5375,-1.875 1.0375,0 1.55,0.7125 1.5125,2.6 -0.4125,0.6375 -0.95,1.0375 -1.6625,1.0375 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path115" />
+                  <path
+                     d="m -32.958835,457.94268 h -4.8625 v 0.9375 h 3.7 l -3.0125,7.2 1.05,0.35 3.125,-7.625 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path117" />
+                  <path
+                     d="m -29.034811,460.80518 c -0.7875,0 -1.4625,0.325 -2.0125,1.1 0.0625,-1.9125 0.7875,-3.175 2,-3.175 0.4625,0 0.9,0.125 1.2875,0.3625 l 0.45,-0.7625 c -0.4875,-0.325 -1.05,-0.5125 -1.725,-0.5125 -1.975,0 -3.1625,1.825 -3.1625,4.5625 0,2.4 0.775,4.075 2.8125,4.075 1.475,0 2.6625,-1.1625 2.6625,-2.9875 0,-1.7875 -1.0875,-2.6625 -2.3125,-2.6625 z m -0.35,4.7375 c -1.1125,0 -1.6,-0.85 -1.65,-2.675 0.425,-0.6875 1.05,-1.15 1.8,-1.15 0.7875,0 1.35,0.4625 1.35,1.7875 0,1.225 -0.5125,2.0375 -1.5,2.0375 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path119" />
+                </g>
+                <g
+                   aria-label="HS rev 1992"
+                   transform="rotate(-45)"
+                   style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                   id="text1105">
+                  <path
+                     d="m 77.93885,416.8959 h 1.1875 v -8.6125 h -1.1875 v 3.6 h -3.625 v -3.6 h -1.1875 v 8.6125 h 1.1875 v -4.0375 h 3.625 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path122" />
+                  <path
+                     d="m 83.747444,408.1334 c -1.5875,0 -2.7125,0.925 -2.7125,2.25 0,1.3375 0.875,1.975 2.55,2.4875 1.4625,0.45 1.8625,0.825 1.8625,1.6625 0,1.0375 -0.8375,1.5375 -1.85,1.5375 -0.9375,0 -1.6125,-0.3375 -2.2625,-0.8625 l -0.65,0.725 c 0.7125,0.7 1.6875,1.1125 2.925,1.1125 1.9375,0 3.075,-1.05 3.075,-2.55 0,-1.65 -1.175,-2.1875 -2.55,-2.6125 -1.55,-0.475 -1.8875,-0.825 -1.8875,-1.55 0,-0.825 0.6875,-1.225 1.55,-1.225 0.7125,0 1.3125,0.225 1.9625,0.75 l 0.65,-0.725 c -0.725,-0.65 -1.475,-1 -2.6625,-1 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path124" />
+                  <path
+                     d="m 94.55428,410.1584 c -0.8,0 -1.4125,0.5 -1.7625,1.4875 l -0.1125,-1.3375 h -0.9875 v 6.5875 h 1.15 v -3.7625 c 0.275,-1.2625 0.75,-1.85 1.575,-1.85 0.2375,0 0.375,0.025 0.575,0.075 l 0.2125,-1.125 c -0.2,-0.05 -0.4375,-0.075 -0.65,-0.075 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path126" />
+                  <path
+                     d="m 101.13455,413.4084 c 0,-2.0125 -0.9375,-3.25 -2.712496,-3.25 -1.7,0 -2.7375,1.4625 -2.7375,3.5125 0,2.0875 1.075,3.375 2.9125,3.375 0.9125,0 1.649996,-0.3125 2.299996,-0.825 l -0.5,-0.6875 c -0.574996,0.4 -1.062496,0.575 -1.712496,0.575 -0.95,0 -1.6625,-0.5875 -1.775,-2.1125 h 4.199996 c 0.0125,-0.15 0.025,-0.3625 0.025,-0.5875 z m -1.137496,-0.2625 h -3.0875 c 0.0875,-1.4625 0.6625,-2.075 1.5375,-2.075 1.0375,0 1.55,0.7125 1.55,2 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path128" />
+                  <path
+                     d="m 107.75975,410.3084 h -1.2125 l -1.7125,5.5625 -1.725,-5.5625 h -1.25 l 2.275,6.5875 h 1.3875 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path130" />
+                  <path
+                     d="m 115.24491,408.5334 h -1.0125 l -2.5875,1.6 0.5,0.8125 1.95,-1.1875 v 7.1375 h 1.15 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path132" />
+                  <path
+                     d="m 119.86483,408.4084 c -1.45,0 -2.675,1.0125 -2.675,2.7625 0,1.6625 1.0125,2.6875 2.3125,2.6875 0.85,0 1.5125,-0.4375 1.875,-1 -0.0875,1.8875 -1.425,2.85 -3.525,3.45 l 0.2625,0.8625 c 3.075,-0.8875 4.45,-2.05 4.45,-5.5125 0,-1.9625 -0.9,-3.25 -2.7,-3.25 z m -0.125,4.55 c -0.8125,0 -1.3875,-0.5625 -1.3875,-1.7625 0,-1.2 0.5625,-1.875 1.5375,-1.875 1.0375,0 1.55,0.7125 1.5125,2.6 -0.4125,0.6375 -0.95,1.0375 -1.6625,1.0375 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path134" />
+                  <path
+                     d="m 126.43221,408.4084 c -1.45,0 -2.675,1.0125 -2.675,2.7625 0,1.6625 1.0125,2.6875 2.3125,2.6875 0.85,0 1.5125,-0.4375 1.875,-1 -0.0875,1.8875 -1.425,2.85 -3.525,3.45 l 0.2625,0.8625 c 3.075,-0.8875 4.45,-2.05 4.45,-5.5125 0,-1.9625 -0.9,-3.25 -2.7,-3.25 z m -0.125,4.55 c -0.8125,0 -1.3875,-0.5625 -1.3875,-1.7625 0,-1.2 0.5625,-1.875 1.5375,-1.875 1.0375,0 1.55,0.7125 1.5125,2.6 -0.4125,0.6375 -0.95,1.0375 -1.6625,1.0375 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path136" />
+                  <path
+                     d="m 132.34354,408.4084 c -1.05,0 -1.8625,0.425 -2.5375,1.2625 l 0.75,0.6 c 0.5625,-0.6375 1.025,-0.9125 1.725,-0.9125 0.8125,0 1.375,0.5125 1.375,1.3875 0,1.3625 -0.725,2.1625 -3.675,5.2375 v 0.9125 h 4.9375 l 0.1375,-0.9625 h -3.7625 c 2.5625,-2.5625 3.5625,-3.675 3.5625,-5.2375 0,-1.3 -0.975,-2.2875 -2.5125,-2.2875 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path138" />
+                </g>
+                <path
+                   transform="rotate(-44.989649)"
+                   style="fill:#df8f87;fill-opacity:1;stroke:none;stroke-width:0.58560997;stroke-miterlimit:4;stroke-dasharray:none"
+                   d="m 108.08881,361.17831 h 51.81631 v 14.68463 h -51.81631 z"
+                   id="rect1107" />
+                <g
+                   aria-label="HS 07"
+                   transform="rotate(-45)"
+                   style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                   id="text1111">
+                  <path
+                     d="m 124.09727,372.85034 h 1.1875 v -8.6125 h -1.1875 v 3.6 h -3.625 v -3.6 h -1.1875 v 8.6125 h 1.1875 v -4.0375 h 3.625 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path142" />
+                  <path
+                     d="m 129.90586,364.08784 c -1.5875,0 -2.7125,0.925 -2.7125,2.25 0,1.3375 0.875,1.975 2.55,2.4875 1.4625,0.45 1.8625,0.825 1.8625,1.6625 0,1.0375 -0.8375,1.5375 -1.85,1.5375 -0.9375,0 -1.6125,-0.3375 -2.2625,-0.8625 l -0.65,0.725 c 0.7125,0.7 1.6875,1.1125 2.925,1.1125 1.9375,0 3.075,-1.05 3.075,-2.55 0,-1.65 -1.175,-2.1875 -2.55,-2.6125 -1.55,-0.475 -1.8875,-0.825 -1.8875,-1.55 0,-0.825 0.6875,-1.225 1.55,-1.225 0.7125,0 1.3125,0.225 1.9625,0.75 l 0.65,-0.725 c -0.725,-0.65 -1.475,-1 -2.6625,-1 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path144" />
+                  <path
+                     d="m 140.1502,364.36284 c -1.875,0 -2.8,1.5375 -2.8,4.3125 0,2.775 0.925,4.325 2.8,4.325 1.875,0 2.8,-1.55 2.8,-4.325 0,-2.7625 -0.925,-4.3125 -2.8,-4.3125 z m 0,0.9125 c 1.0375,0 1.6,0.95 1.6,3.4 0,2.4625 -0.5625,3.4125 -1.6,3.4125 -1.05,0 -1.6,-0.95 -1.6,-3.4125 0,-2.45 0.55,-3.4 1.6,-3.4 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path146" />
+                  <path
+                     d="m 148.57598,364.48784 h -4.8625 v 0.9375 h 3.7 l -3.0125,7.2 1.05,0.35 3.125,-7.625 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path148" />
+                </g>
+                <g
+                   aria-label="1992"
+                   transform="rotate(-45)"
+                   style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                   id="text1115">
+                  <path
+                     d="m 29.446495,457.95629 h -1.0125 l -2.5875,1.6 0.5,0.8125 1.95,-1.1875 v 7.1375 h 1.15 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path151" />
+                  <path
+                     d="m 34.066417,457.83129 c -1.45,0 -2.675,1.0125 -2.675,2.7625 0,1.6625 1.0125,2.6875 2.3125,2.6875 0.85,0 1.5125,-0.4375 1.875,-1 -0.0875,1.8875 -1.425,2.85 -3.525,3.45 l 0.2625,0.8625 c 3.075,-0.8875 4.45,-2.05 4.45,-5.5125 0,-1.9625 -0.9,-3.25 -2.7,-3.25 z m -0.125,4.55 c -0.8125,0 -1.3875,-0.5625 -1.3875,-1.7625 0,-1.2 0.5625,-1.875 1.5375,-1.875 1.0375,0 1.55,0.7125 1.5125,2.6 -0.4125,0.6375 -0.95,1.0375 -1.6625,1.0375 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path153" />
+                  <path
+                     d="m 40.633799,457.83129 c -1.45,0 -2.675,1.0125 -2.675,2.7625 0,1.6625 1.0125,2.6875 2.3125,2.6875 0.85,0 1.5125,-0.4375 1.875,-1 -0.0875,1.8875 -1.425,2.85 -3.525,3.45 l 0.2625,0.8625 c 3.075,-0.8875 4.45,-2.05 4.45,-5.5125 0,-1.9625 -0.9,-3.25 -2.7,-3.25 z m -0.125,4.55 c -0.8125,0 -1.3875,-0.5625 -1.3875,-1.7625 0,-1.2 0.5625,-1.875 1.5375,-1.875 1.0375,0 1.55,0.7125 1.5125,2.6 -0.4125,0.6375 -0.95,1.0375 -1.6625,1.0375 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path155" />
+                  <path
+                     d="m 46.545127,457.83129 c -1.05,0 -1.8625,0.425 -2.5375,1.2625 l 0.75,0.6 c 0.5625,-0.6375 1.025,-0.9125 1.725,-0.9125 0.8125,0 1.375,0.5125 1.375,1.3875 0,1.3625 -0.725,2.1625 -3.675,5.2375 v 0.9125 h 4.9375 l 0.1375,-0.9625 h -3.7625 c 2.5625,-2.5625 3.5625,-3.675 3.5625,-5.2375 0,-1.3 -0.975,-2.2875 -2.5125,-2.2875 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path157" />
+                </g>
+                <g
+                   aria-label="2007"
+                   transform="rotate(-45)"
+                   style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                   id="text1119">
+                  <path
+                     d="m 98.236673,457.84392 c -1.05,0 -1.8625,0.425 -2.5375,1.2625 l 0.75,0.6 c 0.5625,-0.6375 1.025,-0.9125 1.725,-0.9125 0.8125,0 1.375,0.5125 1.375,1.3875 0,1.3625 -0.725,2.1625 -3.675,5.2375 v 0.9125 h 4.937497 l 0.1375,-0.9625 h -3.762497 c 2.5625,-2.5625 3.562497,-3.675 3.562497,-5.2375 0,-1.3 -0.974997,-2.2875 -2.512497,-2.2875 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path160" />
+                  <path
+                     d="m 105.05093,457.84392 c -1.875,0 -2.8,1.5375 -2.8,4.3125 0,2.775 0.925,4.325 2.8,4.325 1.875,0 2.8,-1.55 2.8,-4.325 0,-2.7625 -0.925,-4.3125 -2.8,-4.3125 z m 0,0.9125 c 1.0375,0 1.6,0.95 1.6,3.4 0,2.4625 -0.5625,3.4125 -1.6,3.4125 -1.05,0 -1.6,-0.95 -1.6,-3.4125 0,-2.45 0.55,-3.4 1.6,-3.4 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path162" />
+                  <path
+                     d="m 112.03335,457.84392 c -1.875,0 -2.8,1.5375 -2.8,4.3125 0,2.775 0.925,4.325 2.8,4.325 1.875,0 2.8,-1.55 2.8,-4.325 0,-2.7625 -0.925,-4.3125 -2.8,-4.3125 z m 0,0.9125 c 1.0375,0 1.6,0.95 1.6,3.4 0,2.4625 -0.5625,3.4125 -1.6,3.4125 -1.05,0 -1.6,-0.95 -1.6,-3.4125 0,-2.45 0.55,-3.4 1.6,-3.4 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path164" />
+                  <path
+                     d="m 120.45913,457.96892 h -4.8625 v 0.9375 h 3.7 l -3.0125,7.2 1.05,0.35 3.125,-7.625 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path166" />
+                </g>
+                <path
+                   transform="rotate(-44.989649)"
+                   style="fill:#828282;fill-opacity:1;stroke:none;stroke-width:0.706258;stroke-miterlimit:4;stroke-dasharray:none"
+                   d="m 84.538979,375.86295 h 75.366141 v 14.68462 H 84.538979 Z"
+                   id="rect52" />
+                <g
+                   aria-label="HS 02"
+                   transform="rotate(-45)"
+                   style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                   id="text56">
+                  <path
+                     d="m 112.3197,387.53284 h 1.1875 v -8.6125 h -1.1875 v 3.6 h -3.625 v -3.6 h -1.1875 v 8.6125 h 1.1875 v -4.0375 h 3.625 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path170" />
+                  <path
+                     d="m 118.1283,378.77034 c -1.5875,0 -2.7125,0.925 -2.7125,2.25 0,1.3375 0.875,1.975 2.55,2.4875 1.4625,0.45 1.8625,0.825 1.8625,1.6625 0,1.0375 -0.8375,1.5375 -1.85,1.5375 -0.9375,0 -1.6125,-0.3375 -2.2625,-0.8625 l -0.65,0.725 c 0.7125,0.7 1.6875,1.1125 2.925,1.1125 1.9375,0 3.075,-1.05 3.075,-2.55 0,-1.65 -1.175,-2.1875 -2.55,-2.6125 -1.55,-0.475 -1.8875,-0.825 -1.8875,-1.55 0,-0.825 0.6875,-1.225 1.55,-1.225 0.7125,0 1.3125,0.225 1.9625,0.75 l 0.65,-0.725 c -0.725,-0.65 -1.475,-1 -2.6625,-1 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path172" />
+                  <path
+                     d="m 128.37263,379.04534 c -1.875,0 -2.8,1.5375 -2.8,4.3125 0,2.775 0.925,4.325 2.8,4.325 1.875,0 2.8,-1.55 2.8,-4.325 0,-2.7625 -0.925,-4.3125 -2.8,-4.3125 z m 0,0.9125 c 1.0375,0 1.6,0.95 1.6,3.4 0,2.4625 -0.5625,3.4125 -1.6,3.4125 -1.05,0 -1.6,-0.95 -1.6,-3.4125 0,-2.45 0.55,-3.4 1.6,-3.4 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path174" />
+                  <path
+                     d="m 134.57107,379.04534 c -1.05,0 -1.8625,0.425 -2.5375,1.2625 l 0.75,0.6 c 0.5625,-0.6375 1.025,-0.9125 1.725,-0.9125 0.8125,0 1.375,0.5125 1.375,1.3875 0,1.3625 -0.725,2.1625 -3.675,5.2375 v 0.9125 h 4.9375 l 0.1375,-0.9625 h -3.7625 c 2.5625,-2.5625 3.5625,-3.675 3.5625,-5.2375 0,-1.3 -0.975,-2.2875 -2.5125,-2.2875 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path176" />
+                </g>
+                <path
+                   transform="rotate(-44.989649)"
+                   style="fill:#eae385;fill-opacity:1;stroke:none;stroke-width:0.82821399;stroke-miterlimit:4;stroke-dasharray:none"
+                   d="M 56.26339,390.54758 H 159.90512 V 405.2322 H 56.26339 Z"
+                   id="rect58" />
+                <g
+                   aria-label="HS rev 1996"
+                   transform="rotate(-45)"
+                   style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                   id="text62">
+                  <path
+                     d="m 81.425735,402.21188 h 1.1875 v -8.6125 h -1.1875 v 3.6 h -3.625 v -3.6 h -1.1875 v 8.6125 h 1.1875 v -4.0375 h 3.625 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path180" />
+                  <path
+                     d="m 87.234329,393.44938 c -1.5875,0 -2.7125,0.925 -2.7125,2.25 0,1.3375 0.875,1.975 2.55,2.4875 1.4625,0.45 1.8625,0.825 1.8625,1.6625 0,1.0375 -0.8375,1.5375 -1.85,1.5375 -0.9375,0 -1.6125,-0.3375 -2.2625,-0.8625 l -0.65,0.725 c 0.7125,0.7 1.6875,1.1125 2.925,1.1125 1.9375,0 3.075,-1.05 3.075,-2.55 0,-1.65 -1.175,-2.1875 -2.55,-2.6125 -1.55,-0.475 -1.8875,-0.825 -1.8875,-1.55 0,-0.825 0.6875,-1.225 1.55,-1.225 0.7125,0 1.3125,0.225 1.9625,0.75 l 0.65,-0.725 c -0.725,-0.65 -1.475,-1 -2.6625,-1 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path182" />
+                  <path
+                     d="m 98.041165,395.47438 c -0.8,0 -1.4125,0.5 -1.7625,1.4875 l -0.1125,-1.3375 h -0.9875 v 6.5875 h 1.15 v -3.7625 c 0.275,-1.2625 0.75,-1.85 1.575,-1.85 0.2375,0 0.375,0.025 0.575,0.075 l 0.2125,-1.125 c -0.2,-0.05 -0.4375,-0.075 -0.65,-0.075 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path184" />
+                  <path
+                     d="m 104.62144,398.72438 c 0,-2.0125 -0.9375,-3.25 -2.7125,-3.25 -1.7,0 -2.737501,1.4625 -2.737501,3.5125 0,2.0875 1.075001,3.375 2.912501,3.375 0.9125,0 1.65,-0.3125 2.3,-0.825 l -0.5,-0.6875 c -0.575,0.4 -1.0625,0.575 -1.7125,0.575 -0.95,0 -1.6625,-0.5875 -1.775,-2.1125 h 4.2 c 0.0125,-0.15 0.025,-0.3625 0.025,-0.5875 z m -1.1375,-0.2625 h -3.0875 c 0.0875,-1.4625 0.6625,-2.075 1.5375,-2.075 1.0375,0 1.55,0.7125 1.55,2 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path186" />
+                  <path
+                     d="m 111.24663,395.62438 h -1.2125 l -1.7125,5.5625 -1.725,-5.5625 h -1.25 l 2.275,6.5875 h 1.3875 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path188" />
+                  <path
+                     d="m 118.73179,393.84938 h -1.0125 l -2.5875,1.6 0.5,0.8125 1.95,-1.1875 v 7.1375 h 1.15 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path190" />
+                  <path
+                     d="m 123.35171,393.72438 c -1.45,0 -2.675,1.0125 -2.675,2.7625 0,1.6625 1.0125,2.6875 2.3125,2.6875 0.85,0 1.5125,-0.4375 1.875,-1 -0.0875,1.8875 -1.425,2.85 -3.525,3.45 l 0.2625,0.8625 c 3.075,-0.8875 4.45,-2.05 4.45,-5.5125 0,-1.9625 -0.9,-3.25 -2.7,-3.25 z m -0.125,4.55 c -0.8125,0 -1.3875,-0.5625 -1.3875,-1.7625 0,-1.2 0.5625,-1.875 1.5375,-1.875 1.0375,0 1.55,0.7125 1.5125,2.6 -0.4125,0.6375 -0.95,1.0375 -1.6625,1.0375 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path192" />
+                  <path
+                     d="m 129.91909,393.72438 c -1.45,0 -2.675,1.0125 -2.675,2.7625 0,1.6625 1.0125,2.6875 2.3125,2.6875 0.85,0 1.5125,-0.4375 1.875,-1 -0.0875,1.8875 -1.425,2.85 -3.525,3.45 l 0.2625,0.8625 c 3.075,-0.8875 4.45,-2.05 4.45,-5.5125 0,-1.9625 -0.9,-3.25 -2.7,-3.25 z m -0.125,4.55 c -0.8125,0 -1.3875,-0.5625 -1.3875,-1.7625 0,-1.2 0.5625,-1.875 1.5375,-1.875 1.0375,0 1.55,0.7125 1.5125,2.6 -0.4125,0.6375 -0.95,1.0375 -1.6625,1.0375 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path194" />
+                  <path
+                     d="m 137.09898,396.71188 c -0.7875,0 -1.4625,0.325 -2.0125,1.1 0.0625,-1.9125 0.7875,-3.175 2,-3.175 0.4625,0 0.9,0.125 1.2875,0.3625 l 0.45,-0.7625 c -0.4875,-0.325 -1.05,-0.5125 -1.725,-0.5125 -1.975,0 -3.1625,1.825 -3.1625,4.5625 0,2.4 0.775,4.075 2.8125,4.075 1.475,0 2.6625,-1.1625 2.6625,-2.9875 0,-1.7875 -1.0875,-2.6625 -2.3125,-2.6625 z m -0.35,4.7375 c -1.1125,0 -1.6,-0.85 -1.65,-2.675 0.425,-0.6875 1.05,-1.15 1.8,-1.15 0.7875,0 1.35,0.4625 1.35,1.7875 0,1.225 -0.5125,2.0375 -1.5,2.0375 z"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:1.25;font-family:'Fira Sans', sans-serif;-inkscape-font-specification:'Fira Sans'"
+                     id="path196" />
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

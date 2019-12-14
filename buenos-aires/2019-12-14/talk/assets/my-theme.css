@@ -1,0 +1,55 @@
+.small { font-size: 70% }
+
+.remark-slide-content {
+  background-color: #ffffff;
+  border-top: 80px solid #003D5D;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+  padding: 1em 2em 1em 2em
+}
+
+.title-slide a {
+  color: #C6DEFF; /*default: rgb(249, 38, 114); || sets color of links */
+  text-decoration: none; /* turns off background coloring of links */
+}
+
+
+.title-slide h1 {
+  text-shadow: none;
+  color: #FFFFFF;
+  margin-top: -400px;
+  font-size: 60px;
+}
+
+.title-slide h2 {
+  color: #FFFFFF;
+  font-size: 40px;
+}
+
+.title-slide h3 {
+  color: #FFFFFF;
+  font-size: 30px;
+}
+
+.title-slide {
+  background-color: #003D5D;
+  border-top: 80px solid #003D5D;
+}
+
+.remark-slide-content {
+  color: #333E50;
+  font-size: 30px;
+}
+
+a, a > code {
+  color: #003D5D; /*default: rgb(249, 38, 114); || sets color of links */
+  text-decoration: none; /* turns off background coloring of links */
+}
+
+.remark-code, .remark-inline-code {
+
+    font-family: 'Fira Code','Lucida Console',Monaco,monospace;
+    font-size: 50%;
+
+}

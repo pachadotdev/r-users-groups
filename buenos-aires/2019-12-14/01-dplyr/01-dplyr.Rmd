@@ -1,0 +1,148 @@
+---
+title: "tradestatistics + dplyr"
+author: "Pachá"
+date: "10/17/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Prerequisitos
+
+Nos enfocaremos en cómo usar los paquetes **dplyr**. Ilustraremos las ideas clave con la base de datos de *tradestatistics.io*.
+
+```{r, message = FALSE, cache = FALSE}
+# paquetes ----
+library(dplyr)
+library(tradestatistics)
+```
+
+# Comercio agregado
+
+¿Cuánto exporta Argentina por año? Para esto conviene ver la tabla YR (*Y*ear - *R*eporter) directamente.
+
+```{r}
+yr_rda <- "yr.rda"
+
+if (!file.exists(yr_rda)) {
+  yr <- ots_create_tidy_data(years = 2000:2018, reporters = "arg", table = "yr")
+  save(yr, file =  yr_rda, compress = "xz")
+} else {
+  load(yr_rda)
+}
+
+yr
+```
+
+¿A cuántos países exporta Argentina por año? Ahora vemos una tabla mas desagregada, YRP (*Y*ear - *R*eporter - *P*artner)
+
+```{r}
+yrp_rda <- "yrp.rda"
+
+if (!file.exists(yrp_rda)) {
+  yrp <- ots_create_tidy_data(years = 2000:2018, reporters = "arg", partners = "all", table = "yrp")
+  save(yrp, file =  yrp_rda, compress = "xz")
+} else {
+  load(yrp_rda)
+}
+
+yrp
+
+yrp %>% 
+  filter(export_value_usd > 0) %>% 
+  group_by(year) %>% 
+  count()
+```
+
+# Comercio detallado
+
+¿Cuántos productos exporta Argentina por año? Pasamos a una tabla aún más detallada YRC (*Y*ear - *R*eporter - product *C*ode)
+
+```{r}
+yrc_rda <- "yrc.rda"
+
+if (!file.exists(yrc_rda)) {
+  yrc <- ots_create_tidy_data(years = 2000:2018, reporters = "arg", table = "yrc")
+  save(yrc, file = yrc_rda, compress = "xz")
+} else {
+  load(yrc_rda)
+}
+
+yrc
+
+yrc %>% 
+  filter(export_value_usd > 0) %>% 
+  group_by(year) %>% 
+  count()
+```
+
+¿Cuál es el producto más exportado por Argentina por año? ¿Y el más importado?
+
+```{r}
+yrc %>% 
+  select(year, product_fullname_english, export_value_usd) %>% 
+  group_by(year) %>% 
+  filter(export_value_usd == max(export_value_usd, na.rm = T))
+
+yrc %>% 
+  select(year, product_fullname_english, import_value_usd) %>% 
+  group_by(year) %>% 
+  filter(import_value_usd == max(import_value_usd, na.rm = T))
+```
+
+Ahora quiero crear una tabla con lo más exportado y lo más importado por Argentina en un año.
+
+```{r}
+yrc %>% 
+  select(year, product_fullname_english, export_value_usd) %>% 
+  group_by(year) %>% 
+  filter(export_value_usd == max(export_value_usd, na.rm = T)) %>% 
+
+  left_join(
+    yrc %>% 
+      select(year, product_fullname_english, import_value_usd) %>% 
+      group_by(year) %>% 
+      filter(import_value_usd == max(import_value_usd, na.rm = T)),
+    by = "year"
+  ) %>% 
+    
+  rename(
+    top_export_name = product_fullname_english.x,
+    top_import_name = product_fullname_english.y
+  )
+```
+
+¿Cuáles son los productos que más se exportan de Argentina a Chile? ¿Y los más importados? Ahora veo la más detallada de las tablas, YRPC (*Y*ear - *R*eporter - *P*artner - product *C*ode)
+
+```{r}
+yrpc_rda <- "yrpc.rda"
+
+if (!file.exists(yrpc_rda)) {
+  yrpc <- ots_create_tidy_data(years = 2000:2018, reporters = "arg", partners = "chl")
+  save(yrpc, file = yrpc_rda, compress = "xz")
+} else {
+  load(yrpc_rda)
+}
+ 
+yrpc
+
+yrpc %>% 
+  select(year, product_fullname_english, export_value_usd) %>% 
+  group_by(year) %>% 
+  filter(export_value_usd == max(export_value_usd, na.rm = T)) %>% 
+
+  left_join(
+    yrpc %>% 
+      select(year, product_fullname_english, import_value_usd) %>% 
+      group_by(year) %>% 
+      filter(import_value_usd == max(import_value_usd, na.rm = T)),
+    by = "year"
+  ) %>% 
+  
+  rename(
+    top_export_name = product_fullname_english.x,
+    top_import_name = product_fullname_english.y
+  )
+```
